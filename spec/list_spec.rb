@@ -55,8 +55,8 @@ RSpec.describe "Todo List" do
 
     list[complete_todo].complete
 
-    expect(list.complete.values).to include(list[complete_todo])
-    expect(list.complete.values).not_to include(list[incomplete_todo])
+    expect(list.complete).to include(list[complete_todo])
+    expect(list.complete).not_to include(list[incomplete_todo])
   end
 
   it "lists the incomplete todos" do
@@ -65,8 +65,8 @@ RSpec.describe "Todo List" do
 
     list[complete_todo].complete
 
-    expect(list.incomplete.values).not_to include(list[complete_todo])
-    expect(list.incomplete.values).to include(list[incomplete_todo])
+    expect(list.incomplete).not_to include(list[complete_todo])
+    expect(list.incomplete).to include(list[incomplete_todo])
   end
 
   it "removes old, complete todos" do
