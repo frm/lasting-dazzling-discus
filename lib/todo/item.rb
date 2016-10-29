@@ -1,18 +1,24 @@
 module Todo
   class Item
-    attr_reader :text
-
     def initialize(text)
       @text = text
       @status = :incomplete
     end
 
     def complete?
-      @status == :complete
+      if @status == :complete
+        return true
+      else
+        return false
+      end
     end
 
     def complete
       @status = :complete
+    end
+
+    def text
+      @text
     end
   end
 end
