@@ -4,7 +4,6 @@ Yet Another CeSIUM Ruby Workshop
 This repo contains another 4 branches that allow you to follow up through the
 workshop.
 
-* `basic-exercises`: some basic Ruby exercises for you to get familiar with the language
 * `todo-0`: the setup towards building a todo list. Start from here to follow
   the todo list exercises
 * `todo-1`: a basic resolution of the todo list exercises, using only a handful
